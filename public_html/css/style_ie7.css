@@ -1,0 +1,102 @@
+.top-user-login .form-user-login input[type="submit"]{
+    margin-top: 35px;
+}
+
+.top-menu .form-search input[type="submit"]{
+    background: url("/img/search-lens.png");
+    background-repeat: no-repeat;
+    background-position: 0 -13px;
+    top: 10px;
+}
+
+.top-menu .form-search input[type="submit"]:hover{
+    background: url("/img/search-lens.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 13px;
+    position: absolute;
+    top: 9px;
+    width: 12px;
+}
+
+
+
+.top-menu .menu {
+    *margin-top: 13px;
+}
+
+.layer-user-auth {
+    bottom: 10px;
+}
+/*=============================================== ie 7,8 ================================================*/
+.popup-regulations{
+    width: 752px;
+    background: url("/img/shadow-border_for_ie_popap_regulations.png");
+    background-repeat: repeat-y;
+    margin: 8% auto 0;
+}
+
+.popup-regulations-inner {
+    padding: 0px 40px 10px;
+    position: relative;
+}
+
+.popup-regulations{
+    position: relative;
+    zoom: expression(
+        runtimeStyle.zoom=1, insertAdjacentHTML('beforeEnd','<div class="popup-regulations_shadow-bottom"></div>'));
+    scrollbar-face-color: expression(
+        runtimeStyle.scrollbarFaceColor='#fff', insertAdjacentHTML('afterBegin','<div class="popup-regulations_shadow-top"></div>'));
+}
+
+.popup-regulations_shadow-top{
+    position: absolute;
+    bottom: 100%;
+    left: 0px;
+    background: url("/img/shadow-top_for_ie_popap_regulations.png");
+    background-repeat: no-repeat;
+    height: 56px;
+    width: 752px;
+}
+.popup-regulations_shadow-bottom{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background: url("/img/shadow-bottom_for_ie_popap_regulations.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 752px;
+}
+
+.popup-regulations .pseudo-link_close {
+    right: 37px;
+    top: -25px;
+}
+/*=============================================== ie 7,8 end ================================================*/
+
+.popup-regulations-inner {
+    scrollbar-face-color: expression(
+        runtimeStyle.scrollbarFaceColor='#fff', insertAdjacentHTML('beforeEnd','<div class="popup-regulations-inner_after"></div>')
+        );
+}
+
+.popup-regulations-inner_after{
+    font: 0px/0 Arial,sans-serif;
+    height: 0;
+    width: 100%;
+    display: block;
+}
+
+.top-user-login .form-user-login label{
+    scrollbar-face-color: expression(
+            runtimeStyle.scrollbarFaceColor="#fff", insertAdjacentHTML('beforeEnd','<span class="form-user-login-label_after">&#42</span>')
+        );
+}
+
+.form-user-login-label_after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    color: #f00;
+}

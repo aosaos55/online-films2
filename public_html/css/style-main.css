@@ -1,0 +1,450 @@
+@import url(http://fonts.googleapis.com/css?family=Nosifer);
+
+html, body, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, legend {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background: #ececec;
+    font: .85em/1.5 Arial,sans-serif;
+    color: #333;
+    position: relative;
+    z-index: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a,.link,a:hover,a:visited,a:active{
+    color: #333;
+    text-decoration: none;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    font: 0px/0 Arial,sans-serif;
+}
+
+.pseudo-link{
+    cursor: pointer;
+    border-bottom: 1px dotted #f00;
+}
+.pseudo-link:hover{
+    border-bottom: 1px dotted transparent !important;
+}
+
+/*============================================= top-menu ============================================================*/
+
+
+.top-bar {
+    background: none repeat scroll 0 0 #282828;
+    left: 0;
+    top: -550px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: all .6s linear 0s;
+}
+
+.top-user-action,.top-menu-wrap{
+    background: #282828;
+    width: 100%;
+}
+
+.top-user-action {
+    box-shadow: 0 -25px 25px -20px #000000 inset;
+}
+
+.top-user-action__inner,.top-menu{
+    width: 985px;
+    margin: auto;
+    color: #fff;
+    /*border-left: 1px solid #fff;*/
+    /*border-right: 1px solid #fff;*/
+}
+
+.top-user-action__inner{
+    position: relative;
+    height: 550px;
+}
+
+.layer-user-registration {
+    background: #282828;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    /*z-index: 1;*/
+}
+
+.layer-user-registration .col-left{
+    width: 600px;
+}
+
+.layer-user-registration .title{
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.layer-user-registration .summary{
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #f00;
+    letter-spacing: .5px;
+}
+
+.layer-user-registration .summary strong{
+    font-weight: bold;
+    display: block;
+    color: #fff;
+}
+
+.layer-user-registration .pseudo-link_close{
+    color: #f00;
+    font-size: 14px;
+    position: absolute;
+    right: 120px;
+    top: 15px;
+}
+
+.layer-user-auth{
+    background: #282828;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 300px;
+}
+
+.form-user-auth {
+    position: relative;
+    padding: 50px 280px 10px 20px;
+}
+
+.form-user-auth .pseudo-link_close{
+    position: absolute;
+    top: 25px;
+    right: 538px;
+    color: #f00;
+}
+
+.form-user-auth .title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-user-auth label {
+    float: left;
+    font-size: 15px;
+    position: relative;
+    top: 3px;
+}
+
+
+.pseudo-link_restore-passwd {
+    color: #FF0000;
+    float: right;
+    margin-right: 250px;
+}
+
+.form-user-auth input[type="text"],.form-user-auth input[type="password"]{
+    display: block;
+    font-size: 16px;
+    margin-left: 80px;
+    height: 28px;
+    line-height: 28px;
+    width: 220px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: inset -2px 0px 2px rgba(0,0,0,.4), inset 0px 2px 3px rgba(0,0,0,.2);
+    border: 1px solid #b3b3b3;
+}
+.form-user-auth input[type="text"]:focus,.form-user-auth input[type="password"]:focus{
+    border: 1px solid #ffff39;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,.4);
+}
+.form-user-auth input[type="submit"]{
+    display: block;
+    margin-left: 50px;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    padding: 5px 60px;
+    background:#ffff39;
+    margin-bottom: 20px;
+}
+.form-user-auth input[type="submit"]:focus{
+    display: block;
+    margin-left: 50px;
+    border: 1px solid #444;
+    background:#ffff99;
+    color: #444;
+}
+
+.form-user-registration input[type="text"],.form-user-registration input[type="password"]{
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: block;
+    border: 1px solid #000;
+    width: 240px;
+    height: 30px;
+    margin-left: 151px;
+    line-height: 30px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+    box-shadow: inset -2px 2px 5px rgba(0,0,0,.5);
+}
+.form-user-registration input[type="checkbox"]{
+    float: left;
+    position: relative;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.form-user-registration .take{
+    float: left;
+    display: block;
+    margin-right: 25px;
+}
+.form-user-registration .pseudo-link_regulations{
+    float: left;
+    border-bottom-color: #fff;
+}
+.form-user-registration input[type="submit"]{
+    font-size: 16px;
+    display: block;
+    border: 1px solid #000;
+    width: 240px;
+    height: 30px;
+    margin-top: 65px;
+    margin-left: 111px;
+    line-height: 30px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #ffff39;
+    clear: both;
+    cursor: pointer;
+}
+.form-user-registration input[type="submit"]:focus{
+    background: #FFFFD1;
+}
+.form-user-registration input:focus{
+    border: 1px solid yellow;
+    box-shadow: inset 0px 0px 10px #b3b3b3;
+}
+.form-user-registration label{
+    float: left;
+    font-size: 15px;
+    position: relative;
+    top: 2px;
+    padding-right: 8px;
+}
+.form-user-registration label:after, .form-user-registration input[type="checkbox"]:after{
+    content: '*';
+    color: #f00;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+}
+.form-user-registration .quest{
+    margin-left: 151px;
+    margin-bottom: 3px;
+    line-height: 30px;
+}
+
+.top-menu-wrap{
+    border-top: 1px solid #555;
+}
+
+.top-menu .logo{
+    float: left;
+    font-family: 'Press Start 2P';
+    font-size: 24px;
+    color: #fff;
+    margin-right: 20px;
+    position: relative;
+    left: -20px;
+}
+
+.top-menu .logo a{
+    font-family: 'Nosifer'; 
+    font-size: 24px;
+    color: #fff;
+}
+
+.top-menu .menu{
+     margin-top: 6px;
+}
+
+.top-menu .menu-item{
+    float: left;
+    margin-right: 25px;
+}
+
+.top-menu .menu-item a{
+    font-size: 18px;
+    color: #f00;
+}
+
+.top-menu .menu-item a:hover{
+    text-decoration: underline;
+}
+
+.top-menu .user-action-menu{
+    display: inline-block;
+    float: right;
+    margin-right: 1px;
+    margin-top: 3px;
+}
+
+.top-menu .user-action-menu .pseudo-link{
+    border-bottom-color: #fff;
+    padding-bottom: 1px;
+    border-color: #fff;
+}
+
+.top-menu .user-action .separator{
+    margin: 0px 2px;
+}
+.top-menu{
+    position: relative;
+    padding: 10px 0px;
+}
+.top-menu .form-search{
+    bottom: 13px;
+    position: absolute;
+    right: 172px;
+}
+.top-menu .form-search form{
+    position: relative;
+}
+.top-menu .form-search input[type="text"]{
+    background: #fff;
+    border: 0;
+    width: 196px;
+    padding: 0px 23px 0px 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #333;
+    border-radius: 5px;
+}
+.top-menu .form-search input[type="submit"]{
+    background: url("/img/search-lens.png") no-repeat scroll 0 -13px rgba(0, 0, 0, 0);
+    border: 0 none;
+    height: 13px;
+    line-height: 30px;
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    width: 12px;
+    cursor: pointer;
+}
+.top-menu .form-search input[type="submit"]:hover{
+    background: url("/img/search-lens.png") no-repeat scroll 0 0px rgba(0, 0, 0, 0);
+    height: 13px;
+    position: absolute;
+    top: 8px;
+    width: 12px;
+}
+.top-menu{}
+.top-menu{}
+
+/*============================================= top-menu end ============================================================*/
+
+/*============================================= page ============================================================*/
+
+/*============================================= page end ============================================================*/
+
+
+.popup-regulations-outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    display: none;
+}
+.popup-regulations{
+    width: 700px;
+    background: #fff;
+    margin: 8% auto 0;
+    box-shadow: 0px 0px 30px #000;
+}
+
+.popup-regulations-inner{
+    padding: 20px 20px 35px;
+    position: relative;
+}
+
+.popup-regulations .pseudo-link_close {
+    border-bottom: 1px dotted #000000;
+    position: absolute;
+    right: 17px;
+    top: 5px;
+}
+
+.popup-regulations .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.popup-regulations strong{
+    font-weight: bold;
+}
+.popup-regulations .content {
+    letter-spacing: .1px;
+    line-height: 1.6;
+}
+.popup-regulations .content p{
+    margin-bottom: 20px;
+}
+.popup-regulations .pseudo-botton-take{
+    float: left;
+    clear: both;
+    background: #b3b3b3;
+    color: #fff;
+    padding: 7px 14px;
+    cursor: pointer;
+}
+
+.popup-regulations .pseudo-botton-take:hover{
+    background: #ccc;
+}
+
+/*.show__user-login{
+    top: 535px;
+    transition: all .8s linear 0s;
+}*/
+
+
+.active__user-login {
+    display: block;
+    top: 0;
+    transition: all 0.8s linear 0s;
+}
+
+.hide{
+    display: none;
+}

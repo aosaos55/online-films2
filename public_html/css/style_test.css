@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, legend {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ececec;
+    font: .85em/1.5 Arial,sans-serif;
+    position: relative;
+    color: #333;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a,.link,a:hover,a:visited,a:active{
+    color: #333;
+    text-decoration: none;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    font: 0px/0 Arial,sans-serif;
+}
+
+.top-bar{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: #282828;
+    
+}

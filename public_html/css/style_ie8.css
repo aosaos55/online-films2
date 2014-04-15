@@ -1,0 +1,59 @@
+.top-user-login .form-user-login input[type="submit"]{
+    margin-top: 75px;
+}
+
+.top-menu .form-search input[type="submit"]{
+    background: url("/img/search-lens.png");
+    background-repeat: no-repeat;
+    background-position: 0 -13px;
+     top: 9px;
+}
+.top-menu .form-search input[type="submit"]:hover{
+    background: url("/img/search-lens.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 13px;
+    position: absolute;
+    top: 9px;
+    width: 12px;
+}
+
+/*=============================================== ie 7,8 ================================================*/
+.popup-regulations{
+    width: 752px;
+    background: url("/img/shadow-border_for_ie_popap_regulations.png");
+    background-repeat: repeat-y;
+    margin: 8% auto 0;
+    position: relative;
+}
+
+.popup-regulations-inner {
+    padding: 0px 40px 10px;
+}
+
+.popup-regulations:before{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 0px;
+    background: url("/img/shadow-top_for_ie_popap_regulations.png");
+    background-repeat: no-repeat;
+    height: 56px;
+    width: 752px;
+}
+.popup-regulations:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background: url("/img/shadow-bottom_for_ie_popap_regulations.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 752px;
+}
+
+.popup-regulations .pseudo-link-close {
+    right: 37px;
+    top: -25px;
+}
+/*=============================================== ie 7,8 end ================================================*/
